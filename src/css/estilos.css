@@ -1,0 +1,135 @@
+body{
+    background-color: var(--pale-blue);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    width: 23rem;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.container img{
+    border-radius: 20px 20px 0 0;
+}
+
+.container .produto{
+    padding: 1rem;
+}
+
+.container .produto .textos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.2rem;
+    color: var(--desaturated-blue);
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.produto .textos .titulo{
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
+.container .produto .escolha-de-planos{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    height: 6.1rem;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    background-color: var(--very-pale-blue);
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em; 
+}
+
+.produto .escolha-de-planos img{
+    height: 100%;
+    flex: 0;
+}
+
+.produto .escolha-de-planos .btn-mudar-plano{
+    flex: 2;
+    font-size: .93rem;
+    text-align: end;
+    color: var(--bright-blue);
+    text-decoration: underline;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.produto .escolha-de-planos .ofertas{
+    flex: 3;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    justify-content: space-evenly;
+    color: var(--desaturated-blue);
+    font-size: 1.15rem;
+}
+.escolha-de-planos .ofertas .plano{
+    color: var(--dark-blue);
+    font-weight: 700;
+}
+
+.container .botoes{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    color: var(--desaturated-blue);
+    padding: 1rem;
+    gap: 2rem;
+    font-weight: 700;
+}
+
+.container .botoes .proceder{
+    background-color: var(--bright-blue);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.container .botoes .cancelar{
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.produto .escolha-de-planos .btn-mudar-plano:hover{
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.container .botoes .proceder:hover{
+    opacity: 0.7;
+}
+.container .botoes .cancelar:hover{
+    color: var(--dark-blue);
+}
+
+@media only screen and (min-width: 500px){
+    main{
+        background-image: url(../images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top;
+    }
+
+    .container{
+        width: 30rem;
+    }
+}
